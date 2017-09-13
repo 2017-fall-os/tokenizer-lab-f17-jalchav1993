@@ -1,8 +1,8 @@
-all: tokenize
+all: testdelimcount
 
 CFLAGS = -g -O2
 
-tokenize: printFile.o strcopy.o readlines.o
-	cc -o printFile printFile.o strcopy.o readlines.o
+testdelimcount: testdelimcount.o delimcount.o
+	cc -o testing1 testdelimcount.o delimcount.o
 clean:
-	rm -f  *.o printFile printFile.exe
+	rm -f  *.o testing1
