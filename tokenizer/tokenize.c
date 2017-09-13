@@ -1,13 +1,11 @@
-// for puts
-#include <stdio.h>
-// for exit
-#include <stdlib.h>
-// for perror
-#include <errno.h>
-// for open()
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-// for close
-#include <unistd.h>
+#include <stdio.h>		/* for puts */
+#include <stdlib.h>		/* for exit */
+#include <errno.h>		/* for perror */
+#include <sys/types.h> /* for open */
+#include <sys/stat.h> /* for open */
+#include <fcntl.h> 	/* for close */
+#include <unistd.h> /* for consistency */
+
+
+
 
