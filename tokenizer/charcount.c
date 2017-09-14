@@ -3,8 +3,7 @@
 int charcount(char *inStr)	/* like strdup */
 {
   char *pStr;
-  size_t len;
   for (pStr = inStr; *pStr; pStr++) // count # chars in str
     ;
-	return pStr - inStr + 1;
+	return pStr - inStr;
 }
