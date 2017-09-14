@@ -24,7 +24,7 @@ int main(int argc, char **argv){
 	char *s7 = " ";
 	expected = 1;
 	printf("%s\n", charcount(s7, ' ')==expected ? "pass": "not pass");
-	char *s8 = "      ";
+	char *s8 = "      \n";
 	expected = 6;
 	printf("%s\n", charcount(s8, ' ')==expected ? "pass": "not pass");
 }
