@@ -1,10 +1,8 @@
-all: testdelimcount testcharcount
+all: mytocunit 
 
 CFLAGS = -g -O2
 
-testdelimcount: testdelimcount.o delimcount.o
-	cc -o testing1 testdelimcount.o delimcount.o
-testcharcount: testcharcount.o charcount.o
-	cc -o testing2 testcharcount.o charcount.o
+mytocunit: mytoc.test.o mytoc.o
+	cc -o testing1 mytoc.test.o mytoc.o
 clean:
-	rm -f  *.o testing1 testing2
+	rm -f *.o testing1 
